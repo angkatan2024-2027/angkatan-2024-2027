@@ -1,0 +1,1212 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Angkatan 2024—2027 | SMK Negeri 1 Suluun Tareran</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>SMKN 1 SULTAR</span>
+            <small>ANGKATAN 2024—2027</small>
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="#home">HOME</a>
+            <a href="#tentang">TENTANG</a>
+            <a href="#anggota">ANGGOTA</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#timeline">PERJALANAN</a>
+
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="school-badge">
+
+                <div class="badge-circle">
+                    SMK
+                </div>
+
+                <div class="badge-text">
+
+                    <strong>
+                        SMK NEGERI 1 SULUUN TARERAN
+                    </strong>
+
+                    <span>
+                        ANGKATAN 2024—2027
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p class="small-title">
+                THREE YEARS • ONE STORY • ONE GENERATION
+            </p>
+
+
+            <h1>
+                2024—2027
+
+                <span>
+                    OUR GENERATION
+                </span>
+            </h1>
+
+
+            <p class="hero-description">
+                Satu angkatan, tiga jurusan, dan banyak cerita
+                yang akan menjadi bagian dari perjalanan kami
+                di SMK Negeri 1 Suluun Tareran.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#anggota" class="btn primary">
+                    LIHAT ANGGOTA
+                </a>
+
+                <a href="#tentang" class="btn secondary">
+                    TENTANG ANGKATAN
+                </a>
+
+            </div>
+
+
+            <div class="hero-meta">
+
+                <div>
+                    <strong>17</strong>
+                    <span>SISWA</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div>
+                    <strong>3</strong>
+                    <span>JURUSAN</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div>
+                    <strong>2027</strong>
+                    <span>FINISH</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll-down">
+            ↓
+            <span>SCROLL</span>
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TENTANG
+    ====================================================== -->
+
+    <section id="tentang" class="section about">
+
+        <div class="section-title">
+
+            <p>OUR STORY</p>
+
+            <h2>Tentang Angkatan</h2>
+
+            <span class="section-line"></span>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p>
+                    Kami adalah siswa-siswi SMK Negeri 1 Suluun Tareran
+                    angkatan 2024—2027 yang berasal dari tiga jurusan:
+                    Teknik Komputer dan Jaringan, LPKC, dan Otomotif.
+                </p>
+
+                <p>
+                    Tiga tahun bukan hanya tentang belajar di kelas.
+                    Di dalamnya ada tugas, praktik, canda, kerja sama,
+                    tantangan, dan berbagai pengalaman yang akan
+                    menjadi bagian dari cerita angkatan kami.
+                </p>
+
+                <p>
+                    Website ini dibuat sebagai ruang digital untuk
+                    menyimpan cerita, mengenal anggota angkatan,
+                    dan mengabadikan perjalanan kami sampai tahun
+                    kelulusan.
+                </p>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <h3>17</h3>
+
+                    <p>
+                        Total Siswa
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>3</h3>
+
+                    <p>
+                        Jurusan
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>2027</h3>
+
+                    <p>
+                        Tahun Kelulusan
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ANGGOTA
+    ====================================================== -->
+
+    <section id="anggota" class="section members">
+
+        <div class="section-title">
+
+            <p>THE PEOPLE</p>
+
+            <h2>Anggota Angkatan</h2>
+
+            <span class="section-line"></span>
+
+            <p class="gallery-description">
+                17 siswa • Angkatan 2024—2027
+            </p>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="member-filter">
+
+            <button
+                class="filter-btn active"
+                onclick="filterMembers('all', this)">
+                SEMUA
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterMembers('tkj', this)">
+                TKJ
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterMembers('lpkc', this)">
+                LPKC
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterMembers('otomotif', this)">
+                OTOMOTIF
+            </button>
+
+        </div>
+
+
+        <!-- MEMBER GRID -->
+
+        <div class="member-grid">
+
+
+            <!-- =================================================
+                 TKJ
+            ================================================== -->
+
+
+            <!-- 01 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member01.jpg"
+                        alt="Valensia Runtu">
+
+                    <div class="member-number">
+                        01
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Valensia Runtu
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member02.jpg"
+                        alt="Inri Hartanto">
+
+                    <div class="member-number">
+                        02
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Inri Hartanto
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member03.jpg"
+                        alt="Reva Wokas">
+
+                    <div class="member-number">
+                        03
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Reva Wokas
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member04.jpg"
+                        alt="Karunia Pandelaki">
+
+                    <div class="member-number">
+                        04
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Karunia Pandelaki
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 05 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member05.jpg"
+                        alt="Halen Lamia">
+
+                    <div class="member-number">
+                        05
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Halen Lamia
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 06 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member06.jpg"
+                        alt="Daniel Rauan">
+
+                    <div class="member-number">
+                        06
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Daniel Rauan
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 07 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member07.jpg"
+                        alt="Marcello Walangitan">
+
+                    <div class="member-number">
+                        07
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Marcello Walangitan
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 08 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member08.jpg"
+                        alt="Valentino Ponelo">
+
+                    <div class="member-number">
+                        08
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Valentino Ponelo
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 09 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member09.jpg"
+                        alt="Christiano Bolegraf">
+
+                    <div class="member-number">
+                        09
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Christiano Bolegraf
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 10 -->
+
+            <div class="member-card" data-jurusan="tkj">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member10.jpg"
+                        alt="Elshadai Lonteng">
+
+                    <div class="member-number">
+                        10
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        TKJ
+                    </span>
+
+                    <h3>
+                        Elshadai Lonteng
+                    </h3>
+
+                    <p>
+                        Teknik Komputer dan Jaringan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LPKC
+            ================================================== -->
+
+
+            <!-- 11 -->
+
+            <div class="member-card" data-jurusan="lpkc">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member11.jpg"
+                        alt="Revana Piri">
+
+                    <div class="member-number">
+                        11
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        LPKC
+                    </span>
+
+                    <h3>
+                        Revana Piri
+                    </h3>
+
+                    <p>
+                        LPKC
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 12 -->
+
+            <div class="member-card" data-jurusan="lpkc">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member12.jpg"
+                        alt="Dehan Lumantow">
+
+                    <div class="member-number">
+                        12
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        LPKC
+                    </span>
+
+                    <h3>
+                        Dehan Lumantow
+                    </h3>
+
+                    <p>
+                        LPKC
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 13 -->
+
+            <div class="member-card" data-jurusan="lpkc">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member13.jpg"
+                        alt="Agnes Lohonumang">
+
+                    <div class="member-number">
+                        13
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        LPKC
+                    </span>
+
+                    <h3>
+                        Agnes Lohonumang
+                    </h3>
+
+                    <p>
+                        LPKC
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 OTOMOTIF
+            ================================================== -->
+
+
+            <!-- 14 -->
+
+            <div class="member-card" data-jurusan="otomotif">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member14.jpg"
+                        alt="Lucky Rimper">
+
+                    <div class="member-number">
+                        14
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        OTOMOTIF
+                    </span>
+
+                    <h3>
+                        Lucky Rimper
+                    </h3>
+
+                    <p>
+                        Teknik Otomotif
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 15 -->
+
+            <div class="member-card" data-jurusan="otomotif">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member15.jpg"
+                        alt="Leonel Lengkerang">
+
+                    <div class="member-number">
+                        15
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        OTOMOTIF
+                    </span>
+
+                    <h3>
+                        Leonel Lengkerang
+                    </h3>
+
+                    <p>
+                        Teknik Otomotif
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 16 -->
+
+            <div class="member-card" data-jurusan="otomotif">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member16.jpg"
+                        alt="McLaren Rauan">
+
+                    <div class="member-number">
+                        16
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        OTOMOTIF
+                    </span>
+
+                    <h3>
+                        McLaren Rauan
+                    </h3>
+
+                    <p>
+                        Teknik Otomotif
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 17 -->
+
+            <div class="member-card" data-jurusan="otomotif">
+
+                <div class="member-photo">
+
+                    <img
+                        src="images/member17.jpg"
+                        alt="Novaldy Mondoringin">
+
+                    <div class="member-number">
+                        17
+                    </div>
+
+                </div>
+
+                <div class="member-info">
+
+                    <span class="member-class">
+                        OTOMOTIF
+                    </span>
+
+                    <h3>
+                        Novaldy Mondoringin
+                    </h3>
+
+                    <p>
+                        Teknik Otomotif
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GALLERY
+    ====================================================== -->
+
+    <section id="gallery" class="section gallery">
+
+        <div class="section-title">
+
+            <p>MEMORIES</p>
+
+            <h2>Gallery Angkatan</h2>
+
+            <span class="section-line"></span>
+
+            <p class="gallery-description">
+                Tempat untuk menyimpan momen perjalanan
+                angkatan 2024—2027.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery01.jpg"
+                    alt="Momen Angkatan">
+
+                <div class="gallery-overlay">
+
+                    <span>
+                        MEMORY 01
+                    </span>
+
+                    <strong>
+                        Our Beginning
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery02.jpg"
+                    alt="Momen Angkatan">
+
+                <div class="gallery-overlay">
+
+                    <span>
+                        MEMORY 02
+                    </span>
+
+                    <strong>
+                        Our Story
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery03.jpg"
+                    alt="Momen Angkatan">
+
+                <div class="gallery-overlay">
+
+                    <span>
+                        MEMORY 03
+                    </span>
+
+                    <strong>
+                        Together
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery04.jpg"
+                    alt="Momen Angkatan">
+
+                <div class="gallery-overlay">
+
+                    <span>
+                        MEMORY 04
+                    </span>
+
+                    <strong>
+                        Good Times
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery05.jpg"
+                    alt="Momen Angkatan">
+
+                <div class="gallery-overlay">
+
+                    <span>
+                        MEMORY 05
+                    </span>
+
+                    <strong>
+                        School Days
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gallery06.jpg"
+                    alt="Momen Angkatan">
+
+                <div class="gallery-overlay">
+
+                    <span>
+                        MEMORY 06
+                    </span>
+
+                    <strong>
+                        Forever Remembered
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TIMELINE
+    ====================================================== -->
+
+    <section id="timeline" class="section timeline">
+
+        <div class="section-title">
+
+            <p>OUR JOURNEY</p>
+
+            <h2>Perjalanan 2024—2027</h2>
+
+            <span class="section-line"></span>
+
+        </div>
+
+
+        <div class="timeline-container">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2024
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Awal Perjalanan
+                    </h3>
+
+                    <p>
+                        Memulai perjalanan sebagai siswa
+                        SMK Negeri 1 Suluun Tareran dan
+                        mengenal lingkungan serta teman-teman
+                        baru.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2025
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Bertumbuh Bersama
+                    </h3>
+
+                    <p>
+                        Memperdalam pembelajaran, praktik,
+                        pengalaman organisasi, dan berbagai
+                        kegiatan sekolah.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2026
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Menjadi Lebih Siap
+                    </h3>
+
+                    <p>
+                        Mengembangkan kemampuan sesuai
+                        jurusan dan mulai mempersiapkan
+                        diri untuk menghadapi dunia setelah
+                        sekolah.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2027
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        The Final Chapter
+                    </h3>
+
+                    <p>
+                        Menyelesaikan perjalanan sekolah
+                        dan membawa seluruh pengalaman
+                        yang telah dikumpulkan selama
+                        tiga tahun.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <h3>
+            ANGKATAN 2024—2027
+        </h3>
+
+        <p>
+            SMK Negeri 1 Suluun Tareran
+        </p>
+
+        <p class="copyright">
+            © 2024—2027 • Our Generation
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
